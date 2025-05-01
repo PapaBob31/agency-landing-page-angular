@@ -1,6 +1,8 @@
-# AgencyLandingPageAngular
+# Agency Landing Page Angular
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.10.
+This project was built as a solution to a Robex tech tribe challenge
+
+This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.10
 
 ## Development server
 
