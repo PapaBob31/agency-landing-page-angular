@@ -1,22 +1,17 @@
 import { Component, inject, ElementRef } from '@angular/core';
+import { HeaderComponent } from "./header/header.component"
+import { MainContentComponent } from "./main-content/main-content.component"
+import { IntroComponent } from "./intro/intro.component"
+import { FooterComponent } from "./footer/footer.component"
+import { OutroImagesComponent } from "./outro-images/outro-images.component"
 
 @Component({
   selector: 'app-root',
-  imports: [],
+  imports: [HeaderComponent, MainContentComponent, OutroImagesComponent, FooterComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
 
 export class AppComponent {
-  menuIsShown: boolean = false; // controls the visisbility of the menu on mobile screens
-
-  constructor() {
-    const elementRef = inject(ElementRef);
-    elementRef.nativeElement.addEventListener("click", ()=>{this.menuIsShown = false})
-  }
-
-  toggleMenuVisibility(event: MouseEvent): void {
-    event.stopPropagation()
-    this.menuIsShown = !this.menuIsShown;
-  }
+  
 }
