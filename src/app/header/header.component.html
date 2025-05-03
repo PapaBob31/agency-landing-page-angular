@@ -1,0 +1,10 @@
+<header>
+  <h2>sunnyside</h2>
+  <button id="menu-btn" (click)="toggleMenuVisibility($event)"><img src="/assets/icon-hamburger.svg"></button>
+  <nav [class.shown]="menuIsShown">
+    <a href="#">About</a>
+    <a href="#">Services</a>
+    <a href="#">Project</a>
+    <a href="#" id="current-page">Contact</a>
+  </nav>
+</header>
